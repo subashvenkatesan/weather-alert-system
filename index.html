@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Alert System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Alert System</h1>
+        <form id="weatherForm">
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" class="form-control" id="city" required>
+            </div>
+            <div class="form-group">
+                <label for="alertCondition">Alert Condition:</label>
+                <select class="form-control" id="alertCondition" required>
+                    <option value="">Select Condition</option>
+                    <option value="Thunderstorm">Thunderstorm</option>
+                    <option value="Drizzle">Drizzle</option>
+                    <option value="Rain">Rain</option>
+                    <option value="Snow">Snow</option>
+                    <option value="Mist">Mist</option>
+                    <option value="Smoke">Smoke</option>
+                    <option value="Haze">Haze</option>
+                    <option value="Dust">Dust</option>
+                    <option value="Fog">Fog</option>
+                    <option value="Sand">Sand</option>
+                    <option value="Ash">Ash</option>
+                    <option value="Squall">Squall</option>
+                    <option value="Tornado">Tornado</option>
+                    <option value="Clear">Clear</option>
+                    <option value="Clouds">Clouds</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Set Alert</button>
+        </form>
+        <div id="alertResult" class="alert-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
